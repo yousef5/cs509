@@ -2,5 +2,5 @@
 echo Building for Vercel...
 call npm run build
 echo Deploying to Vercel...
-npx vercel --prod
+npx vercel --prod --force
 echo Done! 
