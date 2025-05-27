@@ -13,10 +13,12 @@ export default defineConfig({
       },
     ],
   },
-  base: "/cs509/", // Update to match your actual repository name
+  base: "/cs509/",
   build: {
     outDir: "dist",
     sourcemap: true,
+    assetsDir: "assets",
+    emptyOutDir: true,
     rollupOptions: {
       output: {
         manualChunks: {
