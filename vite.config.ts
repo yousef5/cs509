@@ -13,7 +13,7 @@ export default defineConfig({
       },
     ],
   },
-  base: "/network-quiz/", // Replace with your repository name
+  base: "/cs509/", // Update to match your actual repository name
   build: {
     outDir: "dist",
     sourcemap: true,
