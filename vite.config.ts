@@ -13,7 +13,6 @@ export default defineConfig({
       },
     ],
   },
-  base: "/cs509/",
   build: {
     outDir: "dist",
     sourcemap: true,
