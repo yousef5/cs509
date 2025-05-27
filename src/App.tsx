@@ -117,7 +117,8 @@ const AppContent = () => {
                       key={item.key}
                       onClick={() => handleNavigation(item.key)}
                       className={`w-full text-right bg-slate-100 border  px-5 py-3 font-medium transition-all duration-200 flex items-center gap-2   hover:border-blue-600 rounded-lg ${
-                        location.pathname === item.key
+                        location.pathname === item.key ||
+                        (location.pathname === "/" && item.key === "/")
                           ? "border-blue-600 text-blue-600"
                           : "text-gray-600 hover:text-blue-600"
                       }`}
@@ -158,7 +159,8 @@ const AppContent = () => {
                   key={item.key}
                   onClick={() => handleNavigation(item.key)}
                   className={`w-full text-right px-5 py-3 rounded-xl font-medium transition-all duration-200 ${
-                    location.pathname === item.key
+                    location.pathname === item.key ||
+                    (location.pathname === "/" && item.key === "/")
                       ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg shadow-blue-500/25"
                       : "bg-white text-gray-600 hover:text-blue-600 hover:bg-blue-50"
                   }`}
